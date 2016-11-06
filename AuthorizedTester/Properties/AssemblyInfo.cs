@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("AuthorizedTester")]
 [assembly: AssemblyDescription("HttpModule for blocking a test website from unknown visitors and bots")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Steve Vaneeckhout")]
 [assembly: AssemblyProduct("AuthorizedTester")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
