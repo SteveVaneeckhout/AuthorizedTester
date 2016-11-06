@@ -47,6 +47,7 @@ namespace AuthorizedTester
             if (IPWhitelist != null && IPWhitelist.Contains(request.UserHostAddress))
             {
                 // IP found, do nothing
+                response.Headers.Add("X-TestUser", "Access by IP");
                 return;
             }
 
@@ -64,6 +65,7 @@ namespace AuthorizedTester
                         if (DoesUserExist(authHeaderVal.Parameter))
                         {
                             // User is valid, do nothing
+                            response.Headers.Add("X-TestUser", "Access by credentials");
                             return;
                         }
                     }
