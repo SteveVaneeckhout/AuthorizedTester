@@ -14,4 +14,8 @@
     <copyright>Copyright 2016</copyright>
     <tags></tags>
   </metadata>
+  <files>
+    <file src="content/web.config.install.xdt" target="content/web.config.install.xdt" />
+    <file src="content/web.config.uninstall.xdt" target="content/web.config.uninstall.xdt" />
+  </files>
 </package>
