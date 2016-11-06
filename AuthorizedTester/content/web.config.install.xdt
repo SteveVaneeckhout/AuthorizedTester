@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
-  <appSettings xdt:Transform="Insert">
-    <add key="TestUsersModule.Whitelist.IP" value="127.0.0.1|:::1" />
-    <add key="TestUsersModule.Whitelist.Users" value="username:password|steve:hunter2" />
+  <appSettings>
+    <add key="TestUsersModule.Whitelist.IP" value="127.0.0.1|::1" xdt:Transform="Insert" />
+    <add key="TestUsersModule.Whitelist.Users" value="username:password|steve:hunter2" xdt:Transform="Insert" />
   </appSettings>
   <system.webServer>
     <modules>
-      <add name="TestUsersModule" type="AuthorizedTester.TestUsersModule" xdt:Transform="Insert" />
+      <add name="TestUsersModule" type="AuthorizedTester.TestUsersModule" xdt:Transform="InsertBefore(//configuration/system.webServer/modules/*[1])" />
     </modules>
   </system.webServer>
 </configuration>
