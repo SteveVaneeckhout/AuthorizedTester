@@ -2,6 +2,5 @@
   provider: NuGet
   api_key:
     secure: XGXP+Bw7tamVD5tIUqjlvfuNFRsk5U/hwcnR9dEwgNkFqI/Zwp8QydqJxqDpy5Tr
-  skip_symbols: false
-  symbol_server:           # remove to push symbols to SymbolSource.org
+  skip_symbols: true
   artifact: /.*\.nupkg/
