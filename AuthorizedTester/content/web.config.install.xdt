@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings xdt:Transform="Insert">
+    <add key="TestUsersModule.Whitelist.IP" value="127.0.0.1|:::1" />
+  </appSettings>
+  <system.webServer>
+    <modules>
+      <add name="TestUsersModule" type="AuthorizedTester.TestUsersModule" xdt:Transform="Insert" />
+    </modules>
+  </system.webServer>
+</configuration>

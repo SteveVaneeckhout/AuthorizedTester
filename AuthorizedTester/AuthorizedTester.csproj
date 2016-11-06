@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AuthorizedTester.nuspec" />
+    <None Include="content\web.config.uninstall.xdt" />
+    <None Include="content\web.config.install.xdt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
