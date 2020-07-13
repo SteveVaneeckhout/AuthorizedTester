@@ -10,9 +10,11 @@
     <projectUrl>https://github.com/SteveVaneeckhout/AuthorizedTester</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>First release</releaseNotes>
-    <copyright>Copyright 2016</copyright>
-    <tags></tags>
+    <releaseNotes>
+      1.1 - Added 2 settings: enable/disable module and domain blacklist. If domains are specified, the module will only work on these domains.
+    </releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>authentication</tags>
   </metadata>
   <files>
     <file src="content/web.config.install.xdt" target="content/web.config.install.xdt" />

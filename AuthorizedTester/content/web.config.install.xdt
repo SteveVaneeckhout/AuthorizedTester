@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
   <appSettings>
+    <add key="TestUsersModule.Enabled" value="true" xdt:Transform="Insert" />
     <add key="TestUsersModule.Whitelist.IP" value="127.0.0.1|::1" xdt:Transform="Insert" />
     <add key="TestUsersModule.Whitelist.Users" value="username:password|steve:hunter2" xdt:Transform="Insert" />
+    <add key="TestUsersModule.Blacklist.Domains" value="test.example.org|test.example.com" xdt:Transform="Insert" />
   </appSettings>
   <system.webServer>
     <modules>
