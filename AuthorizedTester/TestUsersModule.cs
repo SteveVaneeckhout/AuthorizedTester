@@ -33,9 +33,10 @@ namespace AuthorizedTester
         private void LoadSettings()
         {
             var module = WebConfigurationManager.AppSettings["TestUsersModule.Enabled"];
-            if (module != null && bool.TryParse(module, out bool enableModule))
+            bool tmpModuleEnabled;
+            if (module != null && bool.TryParse(module, out tmpModuleEnabled))
             {
-                ModuleEnabled = enableModule;
+                ModuleEnabled = tmpModuleEnabled;
             }
             else
             {
